@@ -151,9 +151,9 @@ table {
     color: #333;
 }
 
-.upper-section{
+/* .upper-section{
 
-}
+} */
 
 .image-section{
     width: 10vw;
@@ -169,7 +169,18 @@ table {
 
 .nav-list{
     margin: 10px 0;
+    text-align: left;
 }
+
+.nav-list .section_name, .section{
+    padding: 8px;
+}
+
+.nav-list .section{
+    padding: 16px;
+}
+
+
 
 .section-wrapper{
     height: 100vw;
@@ -188,6 +199,8 @@ table {
     background-color: var(--primary);
     color:#F9F1F0;
 }
+
+
 
 
 

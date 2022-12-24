@@ -1,0 +1,22 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "resume project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitshivi-fe/resume.git"
+  },
+  "author": "shivi mittal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitshivi-fe/resume/issues"
+  },
+  "homepage": "https://github.com/mitshivi-fe/resume#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
