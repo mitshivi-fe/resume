@@ -146,15 +146,25 @@ table {
                 max-width: 100%;
                 padding: 20px;
                 border: 1px solid var(--primary);
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                gap: 20px;
                 margin: 20px 10px;
+                box-shadow: 8px 8px 5px #ad7f8afc;
+                &_header{
+                    font-size: 36px;
+                    color: var(--primary);
+                    text-decoration: underline var(--secondary);
+                }
+                .card_content_wrapper{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    gap: 80px;
+                    margin: 25px 0;
+                }
                 &_block{
                     display: flex;
                     width: max-content;
                     flex-direction: column;
+                    margin: 15px;
                     .description{
                         text-align: center;
                         margin-top: 10px;

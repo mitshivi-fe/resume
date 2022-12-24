@@ -1,13 +1,13 @@
 let appData = {};
-fetch('./assets/data.json').then(res=>res.json()).then((res)=>{
-    console.log('data from api::', res);
-    appData = res;
-});
 const navList = document.querySelectorAll('.nav-list');
+fetch('./assets/data.json').then(res => res.json()).then((res) => {
+    appData = res.data;
+    addDataInSkillsSection();
+});
 
 navList.forEach(list => {
     list.addEventListener('click', function clickHandler() {
-        navList.forEach(list=>{
+        navList.forEach(list => {
             list.classList.remove('active');
         })
         this.classList.add('active');
@@ -15,123 +15,32 @@ navList.forEach(list => {
 });
 
 
-function addDataInSkillsSection(){
-const skillsBlock = document.getElementById('skills');
-const skillsContentBlock = skillsBlock.getElementsByClassName('section_content')[0];
-const skills = appData;
-console.log('skills::', skills);
+function addDataInSkillsSection() {
+    const skillsBlock = document.getElementById('skills');
+    const skillsContentBlock = skillsBlock.getElementsByClassName('section_content')[0];
+    const skills = appData.skills;
 
-for(let [key, value] of Object.entries(skills)){
-    addCardToSection(value);
-}
-    const languages = [
-        {
-            title: 'HTML 5',
-            tag: 'html',
-            logo: './assets/html5.png',
-        },
-        {
-            title: 'CSS 3',
-            tag: 'css',
-            logo: './assets/html5.png',
-        },
-        {
-            title: 'JavaScript',
-            tag: 'javascript',
-            logo: './assets/html5.png',
-        },
-        {
-            title: 'TypeScript',
-            tag: 'typescript',
-            logo: './assets/html5.png',
-        }
-    ];
-
-    const libsAndFramework = [
-        {
-            title: 'Angular 12',
-            tag: 'angular 6+',
-            logo: './assets/html5.png',
-        },
-        {
-            title: 'React.js',
-            tag: 'react',
-            logo: './assets/html5.png',
-        },
-    ];
-
-    const testingTools = [
-        {
-            title: 'Jasmine',
-            tag: 'jasmine',
-            logo: './assets/html5.png',
-        },
-        {
-            title: 'Karma',
-            tag: 'karma',
-            logo: './assets/html5.png',
-        },
-    ];
-
-    const stylingTools = [
-        {
-            title: 'BootStrap',
-            tag: 'bootstrap',
-            logo: './assets/html5.png',
-        },
-        {
-            title: 'PrimeNg',
-            tag: 'primeng',
-            logo: './assets/html5.png',
-        },
-        {
-            title: 'Angular Material',
-            tag: 'angularMaterial',
-            logo: './assets/html5.png',
-        },
-    ];
-
-    const others = [
-        {
-            title: 'Git',
-            tag: 'git',
-            logo: './assets/html5.png',
-        },
-        {
-            title: 'Netlify',
-            tag: 'netlify',
-            logo: './assets/html5.png',
-        },
-        {
-            title: 'Heroku',
-            tag: 'heroku',
-            logo: './assets/html5.png',
-        },
-    ];
-
-
-
-    const addLibsAndFrameworks = () =>{
-
+    for (let [key, value] of Object.entries(skills)) {
+        addCardToSection(value);
     }
 
-    const addTestingTools = () =>{
-
-    }
-
-    const addStylingTools = () =>{
-
-    }
-
-    const addCardToSection = (data) =>{
+    function addCardToSection({title, data}) {
         const card = createCard();
         skillsContentBlock.append(card);
-        card.append(createInnerContentForCard(data));
-    } 
+        const cardContentWrapper = document.createElement('div');
+        cardContentWrapper.classList.add('card_content_wrapper');
+        cardContentWrapper.append(createInnerContentForCard(data));
+        const header = document.createElement('div');
+        header.innerText = title;
+        header.classList.add('section_content_card_header');
+        card.append(header);
+        card.append(document.createElement('hr'));
+        card.append(cardContentWrapper);
+    }
 
-    const createInnerContentForCard = (data) =>{
+    function createInnerContentForCard(data) {
         const dataFragment = new DocumentFragment();
-        data.forEach(entry=>{
+        data.forEach(entry => {
             const dataBlockWrapper = document.createElement('div');
             dataBlockWrapper.classList.add('section_content_card_block');
             const img = document.createElement('img');
@@ -146,28 +55,12 @@ for(let [key, value] of Object.entries(skills)){
             dataBlockWrapper.append(entryName);
             dataFragment.append(dataBlockWrapper);
         });
-       return dataFragment;
+        return dataFragment;
     }
-    addCardToSection(languages);
-    addCardToSection(libsAndFramework);
-    addCardToSection(testingTools);
-    addCardToSection(stylingTools);
-    addCardToSection(others);
-
-
-    // addLanguages();
-    addLibsAndFrameworks();
-    addStylingTools();
-    addTestingTools();
 }
 
-addDataInSkillsSection();
-
-function createCard(){
+function createCard() {
     const section = document.createElement('section');
     section.classList.add('section_content_card');
     return section;
 }
-
-
-

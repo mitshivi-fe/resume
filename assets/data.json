@@ -1,77 +1,93 @@
 {
     "data": {
         "skills": {
-            "languages": [
-                {
-                    "title": "HTML 5",
-                    "tag": "html",
-                    "logo": "./assets/html5.png"
-                }, {
-                    "title": "CSS 3",
-                    "tag": "css",
-                    "logo": "./assets/html5.png"
-                }, {
-                    "title": "JavaScript",
-                    "tag": "javascript",
-                    "logo": "./assets/html5.png"
-                }, {
-                    "title": "TypeScript",
-                    "tag": "typescript",
-                    "logo": "./assets/html5.png"
-                }
-            ],
-            "libsAndFramework": [
-                {
-                    "title": "Angular 12",
-                    "tag": "angular 6+",
-                    "logo": "./assets/html5.png"
-                }, {
-                    "title": "React.js",
-                    "tag": "react",
-                    "logo": "./assets/html5.png"
-                }
-            ],
-            "testingTools": [
-                {
-                    "title": "Jasmine",
-                    "tag": "jasmine",
-                    "logo": "./assets/html5.png"
-                }, {
-                    "title": "Karma",
-                    "tag": "karma",
-                    "logo": "./assets/html5.png"
-                }
-            ],
-            "stylingTools": [
-                {
-                    "title": "BootStrap",
-                    "tag": "bootstrap",
-                    "logo": "./assets/html5.png"
-                }, {
-                    "title": "PrimeNg",
-                    "tag": "primeng",
-                    "logo": "./assets/html5.png"
-                }, {
-                    "title": "Angular Material",
-                    "tag": "angularMaterial",
-                    "logo": "./assets/html5.png"
-                }
-            ],
-            "others": [
-                {
-                    "title": "Git",
-                    "tag": "git",
-                    "logo": "./assets/html5.png"
-                }, {
-                    "title": "Netlify",
-                    "tag": "netlify",
-                    "logo": "./assets/html5.png"
-                }, {
-                    "title": "Heroku",
-                    "tag": "heroku",
-                    "logo": "./assets/html5.png"
-                }
-            ]
+            "languages": {
+                "title": "Languages",
+                "data": [
+                    {
+                        "title": "HTML 5",
+                        "tag": "html",
+                        "logo": "./assets/html5.png"
+                    }, {
+                        "title": "CSS 3",
+                        "tag": "css",
+                        "logo": "./assets/css3.png"
+                    }, {
+                        "title": "JavaScript",
+                        "tag": "javascript",
+                        "logo": "./assets/js.png"
+                    }, {
+                        "title": "TypeScript",
+                        "tag": "typescript",
+                        "logo": "./assets/ts.png"
+                    }
+                ]
+            },
+
+            "libsAndFramework": {
+                "title": "Frameworks & Libraries",
+                "data": [
+                    {
+                        "title": "Angular 12",
+                        "tag": "angular 6+",
+                        "logo": "./assets/angular.png"
+                    }, {
+                        "title": "React.js",
+                        "tag": "react",
+                        "logo": "./assets/react.png"
+                    }
+                ]
+            },
+            "testingTools": {
+                "title": "Testing tools",
+                "data": [
+                    {
+                        "title": "Jasmine",
+                        "tag": "jasmine",
+                        "logo": "./assets/jasmine.png"
+                    }, {
+                        "title": "Karma",
+                        "tag": "karma",
+                        "logo": "./assets/karma.png"
+                    }
+                ]
+            },
+            "stylingTools": {
+                "title": "Styling Tools",
+                "data": [
+                    {
+                        "title": "BootStrap",
+                        "tag": "bootstrap",
+                        "logo": "./assets/bootstrap.png"
+                    }, {
+                        "title": "PrimeNg",
+                        "tag": "primeng",
+                        "logo": "./assets/primeng.png"
+                    }, {
+                        "title": "Angular Material",
+                        "tag": "angularMaterial",
+                        "logo": "./assets/material.png"
+                    }
+                ]
+            },
+            "others": {
+                "title": "Others",
+                "data": [
+                    {
+                        "title": "Git",
+                        "tag": "git",
+                        "logo": "./assets/git.png"
+                    }, {
+                        "title": "Netlify",
+                        "tag": "netlify",
+                        "logo": "./assets/netlify.png"
+                    }, {
+                        "title": "Heroku",
+                        "tag": "heroku",
+                        "logo": "./assets/heroku.png"
+                    }
+                ]
+            }
         }
     }
 }
