@@ -139,6 +139,30 @@ table {
 }
 .main-content{
     margin-left: 200px;
+    .section{
+        &_content{
+            margin: 10px;
+            &_card{
+                max-width: 100%;
+                padding: 20px;
+                border: 1px solid var(--primary);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 20px;
+                margin: 20px 10px;
+                &_block{
+                    display: flex;
+                    width: max-content;
+                    flex-direction: column;
+                    .description{
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .side-section{
@@ -166,6 +190,11 @@ table {
 .nav-list{
     margin: 10px 0;
     text-align: left;
+    transition: all 0.3s ease-in;
+    &.active{
+        border-left: 4px solid var(--primary);
+        font-weight: bold;
+    }
     .section{
         padding: 8px;
         margin: 10px 0;
@@ -181,7 +210,7 @@ table {
 
 
 .section-wrapper{
-    height: 100vw;
+    min-height: 100vw;
     width: 100%; 
     color: black;
 }
