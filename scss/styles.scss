@@ -139,6 +139,7 @@ table {
 }
 .main-content{
     margin-left: 200px;
+    width: 100%;
     .section{
         &_content{
             margin: 10px;
@@ -151,7 +152,6 @@ table {
                 &_header{
                     font-size: 36px;
                     color: var(--primary);
-                    text-decoration: underline var(--secondary);
                 }
                 .card_content_wrapper{
                     display: flex;
@@ -186,11 +186,15 @@ table {
 }
 
 .image-section{
-    width: 10vw;
-    height: 10vw;
+    width: max-content;
+    height: auto;
     border-radius: 50%;
-    background-color: #fff;
     margin: 30px;
+    .img{
+        border-radius: 50%;
+        border: 2px solid pink;
+        object-fit: cover;
+    }
 }
 
 .navigation-section{
@@ -218,6 +222,11 @@ table {
    
 }
 
+.upper-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .section-wrapper{
     min-height: 100vw;
