@@ -138,6 +138,8 @@ table {
 .main-content{
     margin-left: 20rem;
     width: 100%;
+    position: relative; 
+    z-index: 100;
     .section{
         &_content{
             margin: 1rem;
@@ -145,10 +147,10 @@ table {
                 max-width: 100%;
                 padding: 2rem;
                 border: 0.1rem solid var(--primary);
-                margin: 2rem 1rem;
+                margin: 5rem;
                 box-shadow: 0.8rem 0.8rem 0.5rem #ad7f8afc;
                 &_header{
-                    font-size: 3.6rem;
+                    font-size: 2rem;
                     color: var(--primary);
                 }
                 .card_content_wrapper{
@@ -166,10 +168,42 @@ table {
                     .description{
                         text-align: center;
                         margin-top: 1rem;
+                        font-size: 1.4rem;
                     }
                 }
             }
         }
+        &#education{
+            .header{
+                font-size: 2rem;
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+            .location{
+                margin-top: 0.5rem;
+                font-size: 1.4rem;
+            }
+            .content{
+                margin-top: 1rem;
+                border-top: 0.1rem solid pink;
+            }
+            .sub-section{
+                margin-top: 1rem;
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+            }
+        }
+    }
+    &::before{
+            content: "";
+            background-image: url(../assets/background-shimmer.jpg);
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.1;
     }
 }
 
@@ -181,6 +215,8 @@ table {
     bottom: 0;
     width: 20rem;
     color: #333;
+    box-shadow: 0.3rem 0rem 1rem 0.1rem #ad7f8afc;
+    z-index: 999;
 }
 
 .image-section{
@@ -190,7 +226,7 @@ table {
     margin: 3rem;
     .img{
         border-radius: 50%;
-        border: 0.2rem solid pink;
+        border: 0.6rem solid var(--secondary);
         object-fit: cover;
     }
 }
@@ -228,7 +264,7 @@ table {
 }
 
 .section-wrapper{
-    min-height: 100vw;
+    min-height: 40rem;
     width: 100%; 
     color: black;
 }
