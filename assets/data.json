@@ -91,24 +91,24 @@
         },
         "contact":[
             {
-                "icon": "fa fa-envelope",
+                "icon": "<i class='fa fa-envelope'></i>",
                 "href": "mailto:mitshivi+fe@gmail.com",
-                "title": "Mail"
+                "title": "mitshivi+fe@gmail.com"
             },
             {
-                "icon": "fa fa-linkedin",
+                "icon": "<i class='fa-brands fa-linkedin'></i>",
                 "href": "https://www.linkedin.com/in/shivi-mittal-nitkkr/",
-                "title": "LinkedIn"
+                "title": "linkedin.com/in/shivi-mittal-nitkkr"
             },
             {
-                "icon": "fa fa-github",
+                "icon": "<i class='fa-brands fa-github'></i>",
                 "href": "https://github.com/mitshivi-fe",
-                "title": "Github"
+                "title": "github.com/mitshivi-fe"
             },
             {
-                "icon": "fa-brands fa-instagram",
+                "icon": "<i class='fa-brands fa-instagram'></i>",
                 "href": "https://www.instagram.com/mitshivi/",
-                "title": "Instagram"
+                "title": "instagram.com/mitshivi/"
             }
         ]
     }

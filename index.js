@@ -2,7 +2,9 @@ let appData = {};
 const navList = document.querySelectorAll('.nav-list');
 fetch('./assets/data.json').then(res => res.json()).then((res) => {
     appData = res.data;
+    const {skills: skillsData, contact: contactData} = res.data; 
     addDataInSkillsSection();
+    addDataInContactsSection(contactData);
 });
 
 navList.forEach(list => {
@@ -63,4 +65,28 @@ function createCard() {
     const section = document.createElement('section');
     section.classList.add('section_content_card');
     return section;
+}
+
+function addDataInContactsSection(contactData){
+    const sectionContent = document.querySelector('#contact .section_content');
+    const DocumentFragment = document.createDocumentFragment();
+    contactData.forEach((contact)=>{
+        const p = document.createElement('p');
+        const anchorIcon = document.createElement('a');
+        anchorIcon.href = contact.href;
+        anchorIcon.innerHTML = contact.icon;
+        anchorIcon.classList.add('anchorIcon');
+
+        const anchorData = document.createElement('a');
+        anchorData.href = contact.href;
+        anchorData.innerText = contact.title;
+        anchorData.classList.add('anchorData');
+
+        p.append(anchorIcon);
+        p.append(anchorData);
+        p.classList.add('sec-block');
+        DocumentFragment.append(p);
+    });
+
+    sectionContent.append(DocumentFragment);
 }

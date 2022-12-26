@@ -131,6 +131,11 @@ table {
     --secondary: #F8AFA6;
     --tertiary: #FADCD9;
 }
+// mixins
+@mixin layerOnTopOfBgImage {
+    z-index: 1;
+    position: relative;
+}
 
 .main-wrapper{
     display: flex;
@@ -144,9 +149,11 @@ table {
         &_content{
             margin: 1rem;
             &_card{
+                @include layerOnTopOfBgImage;
                 max-width: 100%;
                 padding: 2rem;
-                border: 0.1rem solid var(--primary);
+                border: 0.1rem solid var(--cream);
+                background-color: white;
                 margin: 5rem;
                 box-shadow: 0.8rem 0.8rem 0.5rem #ad7f8afc;
                 &_header{
@@ -223,7 +230,8 @@ table {
     width: max-content;
     height: auto;
     border-radius: 50%;
-    margin: 3rem;
+    margin: 1rem 3rem;
+
     .img{
         border-radius: 50%;
         border: 0.6rem solid var(--secondary);
@@ -264,12 +272,13 @@ table {
 }
 
 .section-wrapper{
-    min-height: 40rem;
+    min-height: 100vh;
     width: 100%; 
     color: black;
 }
 
 .section-header{
+    @include layerOnTopOfBgImage;
     font-weight: 200;
     margin-bottom: 6rem;
     margin-top: 0;
@@ -288,6 +297,25 @@ a, a:hover{
     text-decoration: none;
 }
 
-
-
-
+#contact{
+    .sec-block{
+        margin: 4rem;
+        line-height: 5rem;
+    }
+    .anchorIcon{
+        @include layerOnTopOfBgImage;
+        font-size: 2.5rem;
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 50%;
+        background: var(--secondary);
+    }
+    .anchorData{
+        @include layerOnTopOfBgImage;
+        font-size: 2rem;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
