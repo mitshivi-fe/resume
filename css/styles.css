@@ -1,7 +1,3 @@
-/* Make the site responsive */
-@media (max-width: 600px) {
-  /* Add styles for narrow screens here */ }
-
 @media (min-width: 601px) and (max-width: 900px) {
   /* Add styles for medium screens here */ }
 
@@ -285,3 +281,10 @@ a, a:hover {
   background: var(--cream);
   font-size: 1.4rem;
   color: dimgrey; }
+
+/* Make the site responsive */
+@media (max-width: 600px) {
+  .side-section {
+    display: none; }
+  .main-content {
+    margin-left: 0; } }

@@ -1,9 +1,4 @@
-/* Make the site responsive */
-@media(max-width: 600px) {
-    
 
-    /* Add styles for narrow screens here */
-}
 
 @media(min-width: 601px) and(max-width: 900px) {
     
@@ -352,4 +347,16 @@ a, a:hover{
             color: dimgrey;
         }
     }
+}
+
+// mobile view
+/* Make the site responsive */
+@media(max-width: 600px) {
+    .side-section{
+        display: none;
+    }
+    .main-content{
+        margin-left: 0;
+    }
+
 }
