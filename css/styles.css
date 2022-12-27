@@ -259,3 +259,27 @@ a, a:hover {
   cursor: pointer; }
   #contact .anchorData:hover {
     text-decoration: underline; }
+
+#experiences .exp_card .header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid var(--primary); }
+  #experiences .exp_card .header_img {
+    width: 100px; }
+
+#experiences .exp_card_content {
+  padding: 2rem;
+  font-size: 1.6rem; }
+  #experiences .exp_card_content li {
+    list-style: disc; }
+  #experiences .exp_card_content_title {
+    font-weight: bold;
+    padding-bottom: 1rem; }
+
+#experiences .exp_card_footer {
+  margin: -2rem;
+  padding: 2rem 2rem;
+  background: var(--cream);
+  font-size: 1.4rem;
+  color: dimgrey; }

@@ -110,6 +110,59 @@
                 "href": "https://www.instagram.com/mitshivi/",
                 "title": "instagram.com/mitshivi/"
             }
+        ],
+        "experience": [
+            {
+                "companyName": "Capgemini",
+                "logo": "https://prod.ucwe.capgemini.com/wp-content/themes/capgemini2020/assets/images/logo.svg",
+                "title": "Senior Software Engineer",
+                "duration": "Jul 2018 - Sep 2019",
+                "location": "Pune, India",
+                "work": [
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente."
+                ],
+                "tools": [
+                    "HTML5", "CSS3", "JavaScript", "TypeScript" 
+                ]
+            },
+            {
+                "companyName": "Talentica Software",
+                "logo": "https://www.talentica.com/wp-content/uploads/2021/09/Talentica-Logo.svg",
+                "title": "Software Engineer - I2 (Frontend)",
+                "duration": "Sep 2019 - Sep 2021",
+                "location": "Pune, India",
+                "work": [
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente."
+                ],
+                "tools": [
+                    "HTML5", "CSS3", "JavaScript", "TypeScript" 
+                ]
+            },
+            {
+                "companyName": "CoinDCX",
+                "logo": "https://coindcx.com/assets/new-home-pagee/Logo_CoinDCX.svg",
+                "title": "Senior Software Engineer (Frontend)",
+                "duration": "Sep 2021 - Present",
+                "location": "Remote",
+                "work": [
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente.",
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illum, necessitatibus error, quo molestiae ipsum, cumque sequi hic quis dolorum vero! Nulla, ipsa sed cum nihil excepturi illum maxime sapiente."
+                ],
+                "tools": [
+                    "HTML5", "CSS3", "JavaScript", "TypeScript" 
+                ]
+            }
         ]
     }
 }

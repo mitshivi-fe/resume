@@ -2,9 +2,10 @@ let appData = {};
 const navList = document.querySelectorAll('.nav-list');
 fetch('./assets/data.json').then(res => res.json()).then((res) => {
     appData = res.data;
-    const {skills: skillsData, contact: contactData} = res.data; 
+    const {skills: skillsData, contact: contactData, experience: expData} = res.data; 
     addDataInSkillsSection();
     addDataInContactsSection(contactData);
+    addDataInExperienceSection(expData);
 });
 
 navList.forEach(list => {
@@ -89,4 +90,54 @@ function addDataInContactsSection(contactData){
     });
 
     sectionContent.append(DocumentFragment);
+}
+
+function addDataInExperienceSection(expData){
+    expData.reverse();
+    const expSection = document.querySelector('#experiences .section_content');
+    const documentFragment = document.createDocumentFragment();
+    expData.forEach(data=>{
+        const card = createCard();
+        card.classList.add('exp_card');
+
+        const headerSection = document.createElement('div');
+        headerSection.classList.add('header');
+        const imageDiv = document.createElement('span');
+        const logo = document.createElement('img');
+        logo.src = data.logo;
+        logo.classList.add('header_img');
+        logo.alt = data.companyName;
+        imageDiv.append(logo);
+        // const companyTitle = document.createElement('a');
+        // companyTitle.innerText = data.companyName;
+        headerSection.append(imageDiv);
+
+        const contentSection = document.createElement('div');
+        const roleDiv = document.createElement('div');
+        roleDiv.innerText = data.title;
+        roleDiv.classList.add('exp_card_content_title');
+        const listSection = document.createElement('ul');
+        const listDocumentFragment = document.createDocumentFragment();
+        data.work.forEach(task=>{
+            const taskList = document.createElement('li');
+            taskList.innerHTML = task;
+            listDocumentFragment.append(taskList);
+        });
+        listSection.append(listDocumentFragment);
+        contentSection.append(roleDiv, listSection);
+        contentSection.classList.add('exp_card_content');
+        
+        const footerSection = document.createElement('div');
+        const span = document.createElement('span');
+        span.innerText = `${data.duration} | ${data.location}`;
+        footerSection.append(span);
+        footerSection.classList.add('exp_card_footer');
+
+        card.append(headerSection, contentSection, footerSection);
+        documentFragment.append(card);
+    });
+
+    expSection.append(documentFragment);
+
+
 }

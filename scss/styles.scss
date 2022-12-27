@@ -319,3 +319,35 @@ a, a:hover{
         }
     }
 }
+
+#experiences{
+    .exp_card{
+        .header{
+            display: flex;
+            align-items: center;
+            padding-bottom: 1rem;
+            border-bottom: 0.1rem solid var(--primary);
+             &_img{
+                width: 100px;
+             }
+        }
+        &_content{
+            padding: 2rem;
+            font-size: 1.6rem;
+            li{
+                list-style: disc;
+            }
+            &_title{
+                font-weight: bold;
+                padding-bottom: 1rem;
+            }
+        }
+        &_footer{
+            margin: -2rem;
+            padding: 2rem 2rem;
+            background: var(--cream);
+            font-size: 1.4rem;
+            color: dimgrey;
+        }
+    }
+}
