@@ -1,5 +1,6 @@
 let appData = {};
 const navList = document.querySelectorAll('.nav-list');
+ObserveAndHighlightSection();
 fetch('./assets/data.json').then(res => res.json()).then((res) => {
     appData = res.data;
     const {skills: skillsData, contact: contactData, experience: expData} = res.data; 
@@ -138,6 +139,21 @@ function addDataInExperienceSection(expData){
     });
 
     expSection.append(documentFragment);
+}
 
+function ObserveAndHighlightSection(){
+    const observer = new IntersectionObserver(entries=>{
+        entries.forEach(entry =>{
+            const ele = document.getElementById(`list-${entry.target?.id}`);
+            ele.classList.toggle('active', entry.isIntersecting);
+        })
+    }, {
+      rootMargin: "-10%",
+      threshold: 0.2
+    })
 
+    const sections = document.querySelectorAll('.section-wrapper');
+    sections.forEach(section=>{
+        observer.observe(section);
+    })
 }

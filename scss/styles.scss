@@ -246,7 +246,7 @@ table {
 .nav-list{
     margin: 1rem 0;
     text-align: left;
-    transition: all 0.3s ease-in;
+    transition: all 0.1s ease-in;
     &.active{
         border-left: 0.4rem solid var(--primary);
         font-weight: bold;
