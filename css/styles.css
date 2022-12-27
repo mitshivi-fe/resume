@@ -272,7 +272,8 @@ a, a:hover {
   padding: 2rem;
   font-size: 1.6rem; }
   #experiences .exp_card_content li {
-    list-style: disc; }
+    list-style: disc;
+    padding-bottom: 1rem; }
   #experiences .exp_card_content_title {
     font-weight: bold;
     padding-bottom: 1rem; }
